@@ -1,0 +1,65 @@
+<html>
+    <body>
+        <form>
+            Select your favorite color:
+            <input type="color"
+                   name="favcolor">
+            <br><br>
+
+            Birthday:
+            <input type="date"
+                   name="bday">
+            <br><br>
+
+            Enter a date before 1980-01-01:
+            <input type="date" name="bday"
+                   max="1979-12-31">
+            <br>
+            Enter a date after 2000-01-01:
+            <input type="date" name="bday"
+                   min="2000-01-02">
+            <br><br>
+            Birthday (date abd time):
+            <input type="datetime-local"
+                   name="vdaytime">
+            <br><br>
+            E-mail:
+            <input type="email"
+                   name="email">
+            <br><br>
+            Quantity (between 1 and 5):
+            <input type="number"
+                   name="quantity" min="1"
+                   max="10">
+            <br><br>
+            Search Google:
+            <input type="search"
+                   q="googlesearch">
+            <br><br>
+            Enter URL:
+            <input id="myURL"
+                   name="myURL" type="url"
+                   placeholder="http://glauniversity.in:8083/EduwareHome/Home#">
+            <br><br>
+
+            Offering suggested values:
+            <input id="myURL"
+                   name="myURL" type="url"
+                   list="dafaultURL">
+
+            <datalist id="defaultURLs">
+                <option
+                        value="https://www.mozilla.org/">
+                    <option
+                            value="http://w1.org/">
+                </option>
+            </datalist>
+            <br><br>
+
+            Using labels for suggested values:<br><br>
+            <input id="myURL"
+                   name="myURL"
+                   type="url" list="defaultURLs">
+            <datalist id="">
+            <option value="https://developer.mozilla.org/">
+                <option value="http://">
